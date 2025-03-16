@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="icon" type="image/png" href="CEC.png"> 
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f85050;
+    background: linear-gradient(-45deg, #ff5e62, #ff9966, #f9d423, #ff4e50, #ff5e62, #ff9966);
+    background-size: 600% 600%; /* Increase size for smoother animation */
+    animation: gradientBackground 10s ease infinite;
+}
+
+     @keyframes gradientBackground {
+        0% {
+        background-position: 0% 50%;
+    }
+        50% {
+        background-position: 100% 50%;
+    }
+       100% {
+        background-position: 0% 50%;
+    }
+}
+        header {
+            background: #333;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 15px;
+        }
+
+        nav a:hover {
+            background-color: #ff1b1b;
+            color: #fff;
+        }
+
+        section {
+            padding: 15px;
+            margin: 20px;
+            background-image: url(VNTAGE.jpg);
+            background-attachment: fixed;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            font-display: thick;
+        }
+
+        section {
+            padding: 15px;
+            margin: 20px;
+            background-image: url(VNTAGE.jpg);
+            background-attachment: fixed;
+            background-size: cover; 
+            animation: moveBackground 15s linear infinite; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            font-display: thick;
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        iframe {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            border: 2px solid #ff1b1b;
+            border-radius: 10px;
+        }
+
+        .creator-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .creator-card {
+            background: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .creator-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .creator-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            margin: 5px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         Welcome to our simple personal blog page.
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#creators">Creators</a>
+        <a href="#videos">Favorite Videos</a>
+        <a href="#map">School Map</a>
+        <a href="#emojis">Our Favorite Emojis</a>
+        <a href="#externallinks">External Links</a>
+    </nav>
+
+    <section id="about">
+        <h2>About this Website.</h2>
+        <p>Hi! This website offers our different websites that presented to you to be inspired. Josh & Geo&copy; 2025</p>
+    </section>
+
+    <section id="creators">
+        <h2>About the Website Creators &#9824;</h2>
+        <div class="creator-container">
+            <div class="creator-card">
+                <img src="upaw.jpg" alt="Geoffrey T. Panlaan Jr.">
+                <h3>Geoffrey T. Panlaan Jr.</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/geoffrey.panlaan.9" target="_blank"> Facebook</a>
+                    <a href="https://www.roblox.com/users/302831874/profile?friendshipSourceType=PlayerSearch" target="_blank"> Roblox</a>
+                    <a href="https://x.com/panlaan275" target="_blank"> Twitter</a>
+                </div>
+            </div>
+            <div class="creator-card">
+                <img src="i gur.jpg" alt="Joshua T. Ocariza">
+                <h3>Joshua T. Ocariza</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/joshua.ocariza119" target="_blank"> Facebook</a>
+                    <a href="https://www.youtube.com/@ps99scammertrolledbyjosh" target="_blank"> Youtube</a>
+                    <a href="https://www.roblox.com/users/829879514/profile" target="_blank">Roblox</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Our Favorite Youtube Video&#128507;</h2>
+        <iframe src="https://www.youtube.com/embed/3WiOIL_wefI?si=mJS_uXo8mm7_KBLP" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ctMyvJsBSzI?si=0cDXtsyCvVx9IQj4" allowfullscreen></iframe>
+    </section>
+
+    <section id="map">
+        <h2>Our School Map 🏫</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5918468813943!2d123.8934419747978!3d10.294432889826506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1741482535894!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="emojis">
+        <h2>Our Favorite Emojis</h2>
+         <p>The Spade Emoji:&#9824;</p>
+         <p>Sun Emoji: &#127774;</p>
+         <p>Cactus Emoji: &#127797;</p>
+         <p>Present Emoji: &#127873;</p>
+         <p>Wave Emoji: &#128075;</p>
+    </section>
+
+    <section id="externallinks">
+        <h1>Click a fruit to redirect you to a random website.</h1>
+        <img src="code.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="Github Website" title="Github Website" href="https://github.com/" coords="10,18,120,129" shape="rect">
+            <area target="_blank" alt="Github Code Repository" title="Github Code Repository" href="https://github.com/joshuaocariza2006/mainwebsite/tree/main-code2" coords="125,23,206,126" shape="rect">
+            <area target="_blank" alt="Google" title="Google" href="https://www.google.com/" coords="12,150,117,242" shape="rect">
+            <area target="_blank" alt="Youtube" title="Youtube" href="https://www.youtube.com/" coords="205,250,125,151" shape="rect">
+        </map>
+    </section>
+
+    <footer>
+        <section>
+        <p>&copy;All rights Reserved 2025, Josh & Geo</p>
+        </section>
+    </footer>
+</body>
+</html>
