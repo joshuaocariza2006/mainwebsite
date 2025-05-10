@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT MARK</title>
+    <link rel="icon" href="favicon-modified.png" type="icon/x-image">
+    <style>
+         body {
+            background-image: url(cover.png);
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            min-height: 95vh; 
+            font-family: arial, sans-serif;
+        }
+        header, nav, main, footer, aside, section {
+            border: 1px solid white;
+        }
+        header {
+            text-align: center;
+            color: white;
+            background-color: rgb(51, 51, 51);
+            height: 100px;
+            border-radius: 20px;
+            min-height: 50px;
+        }
+        .text {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            right: 3%;
+        }
+        nav {
+            border-radius: 20px;
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(51, 51, 51);
+            height: 40px; 
+            gap: 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            margin-top: 1%;
+        }
+        .underline {
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        main {
+            margin-top: 2vh;
+            flex: 2;
+            background-color: rgb(51, 51, 51);
+            border-radius: 20px;
+            width: 50%;
+            height: 85vh;
+        }
+        section {
+            background-color: rgb(87, 87, 87);
+            border-radius: 20px;
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2%;
+            flex: 2;
+        }
+        article {
+            right: 3%
+        }
+        summary {
+            background-color: rgb(87, 87, 87);
+            border-radius: 20px;
+            color: white;
+            right: 3%;
+            text-align: justify;
+        }
+        .margin {
+            margin-top: 5vh;
+        }
+        .h1 {
+            margin-left: 3%;
+            color: white;
+        }
+        aside {
+            flex: 1;
+            background-color: rgb(51, 51, 51);
+            text-align: center;
+            border-radius: 20px;
+            color: white;
+            width: 50%;
+            height: 85vh;
+            margin-top: 2vh;
+            min-width: 250px;
+            max-width: 350px; 
+            overflow: hidden; 
+            word-wrap: break-word;
+            white-space: normal; 
+        }
+        footer {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            text-align: center;
+            font-size: medium;
+            height: 40px;
+            margin: 2vh;
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+        p {
+            margin-left: 45%;
+        }
+        .text-align {
+            text-align: left;
+        }
+        .frame {
+            text-align: center;
+            width: 100%;
+            height: 60vh;
+        }
+        .left {
+            margin-left: 20%;
+            width: 90%;
+        }
+        p {
+            line-height: 1.7;
+            position: flex;
+        }
+        select {
+            border-radius: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header> 
+    <h1 class="text">PORTFOLIO</h1>
+</header>
+
+<nav>
+    <a href="home.html" class="underline">HOME </a>
+    <a href="education.html" class="underline">EDUCATION </a>
+    <a href="hobbies.html" class="underline">HOBBIES</a>
+</nav>
+
+<div class="container">
+<main>
+    <h1 class="h1">About Us</h1>
+    <section class="margin">
+        <article> MARK V. ROSALES </article>
+        <summary>Mark V. Rosales is a passionate individual driven by curiosity and a love for learning. 
+            He has a deep interest in the world, which motivates him to seek knowledge across various fields.
+            He enjoys reading articles online to stay informed and expand his understanding of different topics. 
+            Whether for academic purposes or personal growth, he immerses himself in research and strives to apply what he learns in meaningful ways.
+            Creativity and innovation inspire him, pushing him to think outside the box and embrace new experiences. 
+            He believes that growth comes from stepping out of one's comfort zone and facing challenges head-on.
+            His enthusiasm for discovery fuels his desire for continuous improvement and adaptability in an ever-changing 
+            world. At his core, he values knowledge, exploration, and the endless possibilities that learning brings..
+             </summary>
+    </section>
+
+    <section class="margin">
+        <article> Expertise</article>
+        <details>
+            <ul>
+                <li>LEADERSHIP</li>
+                <li>COMMITMENT</li>
+                <li>C PROGRAMMING</li>
+                <li>C++ PROGRAMMING</li>
+                <li>HTML</li>
+            </ul>
+        </details>
+    </section>
+</main>
+<aside>
+    <h2>Profile
+        <select name="name" id="" onchange="location.href=this.value">
+            <option value=""></option>
+            <option value="about us.html">GEMAR</option>
+        </select></h2>
+    <img src="mrk-modified.png" alt="handsome" height="50%" width="50%">
+    
+    <div class="text-align">
+    <p class="left" style="font-size: small;">
+        NAME: MARK V. ROSALES <br>
+        AGE: 21 <br>
+        BIRTH DATE: 03/29/2003 <br>
+        ADDRESS: 265-B SANCIANGKO ST. <br>
+        CEBU CITY, CEBU CITY 6000 <br>
+        EMAIL: rosalesmark04@gmail.com <br>
+        CONTACT: 09684984984 <br>
+    </p>
+    </div>
+</aside>
+</div>
+<main class="frame">
+    <h2 class="margin" style="color: white; text-align: center;">Address Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d409.5520253835341!2d123.89172957072795!3d10.296529995424152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDE3JzQ3LjUiTiAxMjPCsDUzJzMxLjEiRQ!5e1!3m2!1sen!2sph!4v1742026128204!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>
+<footer>
+    <p> &copy; All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
